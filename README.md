@@ -1,37 +1,55 @@
-﻿# SolutionCraft
+﻿# SolutionCraft - An Enterprise Solution-Architecture & Delivery Platform
 
-![Next.js](https://img.shields.io/badge/Next.js-000?logo=next.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)
-![Status](https://img.shields.io/badge/status-MVP-orange)
+A platform for a custom-development consultancy serving European SMEs: a public marketing site, a free competitive-insights capture for lead generation, consultation booking, a client project-tracking view, and an internal team operations area - all in one single-page app.
 
-> **An enterprise solution-architecture platform for a custom-development consultancy** serving European SMEs. One codebase spanning a public marketing site, a free competitive-insights capture for lead generation, consultation booking, a client project-tracking portal, and an internal team operations dashboard.
+> **Status:** Pre-launch MVP. Public site, lead capture, and dashboard views are implemented; live integrations are in progress.
 
-## Features
+## Overview
 
-| Surface | Description |
-|---|---|
-| **Public site** | Homepage, services, about, contact, and legal pages built to establish trust for a new firm without fake metrics. |
-| **Lead intelligence** | Free competitive-insights capture that doubles as a lead-generation funnel. |
-| **Consultation booking** | Primary conversion flow: landing → booking → scoped engagement. |
-| **Client dashboard** | Post-engagement project tracking for clients. |
-| **Team dashboard** | Internal sales pipeline, project management, and collaboration tooling. |
-| **Partner network** | Coordination layer for a global development-partner network. |
+SolutionCraft models the full journey of a solution-architecture firm: a prospect lands on the public site, captures free competitive insights, books a paid consultation, and then tracks the resulting engagement - while the team runs sales, projects, and collaboration from an internal area.
 
-## Engineering highlights
+It is built as a typed Vite + React single-page application with a shared design system, smooth motion, and a Supabase backend.
 
-- **Three surfaces, one codebase** — public marketing site, client portal, and internal ops dashboard share a unified Next.js app and design system.
-- **End-to-end engagement flow** — landing → insights capture → consultation → project delivery → ongoing support modeled as one pipeline.
-- **Trust-first IA** — information architecture designed to convert before any client logos or metrics exist.
+## Core Features
 
-## Tech stack
+- **Public site** - homepage, services, about, contact, and legal pages built to establish trust without fabricated metrics.
+- **Lead intelligence** - free competitive-insights capture that doubles as a lead funnel.
+- **Consultation booking** - the primary conversion flow: landing to booking to engagement.
+- **Client view** - post-engagement project tracking.
+- **Team area** - internal sales pipeline, project management, and collaboration.
 
-| Layer | Stack |
-|---|---|
-| Frontend | Next.js, React, TypeScript |
-| Styling | Tailwind CSS, shadcn/ui |
-| App | Public site + client portal + internal dashboard |
+## Architecture
 
-## Status
+| Layer | Technology |
+|-------|------------|
+| Frontend | Vite, React 18, TypeScript |
+| Styling | Tailwind CSS, Framer Motion |
+| Icons | lucide-react |
+| Backend | Supabase (Postgres, Auth) |
 
-Pre-launch MVP.
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/01.png" width="800" /><br/><br/>
+  <img src="screenshots/02.png" width="800" /><br/><br/>
+  <img src="screenshots/03.png" width="800" /><br/><br/>
+  <img src="screenshots/04.png" width="800" /><br/><br/>
+</p>
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+## Roadmap
+
+- CRM / booking integrations
+- Partner-network coordination tooling
+- Client billing and reporting
+
+## Notes
+
+Shared as a portfolio artifact demonstrating product and system design. Pre-launch prototype.
+
