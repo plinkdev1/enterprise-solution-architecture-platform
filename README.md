@@ -1,6 +1,6 @@
-﻿<div align="center">
+<div align="center">
 
-# SolutionCraft
+# Enterprise Solution-Architecture Platform
 
 **An enterprise solution-architecture platform: marketing site, client portal, and team dashboard**
 
