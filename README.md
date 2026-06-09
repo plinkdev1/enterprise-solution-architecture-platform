@@ -1,55 +1,137 @@
-﻿# SolutionCraft - An Enterprise Solution-Architecture & Delivery Platform
+﻿<div align="center">
 
-A platform for a custom-development consultancy serving European SMEs: a public marketing site, a free competitive-insights capture for lead generation, consultation booking, a client project-tracking view, and an internal team operations area - all in one single-page app.
+# SolutionCraft
 
-> **Status:** Pre-launch MVP. Public site, lead capture, and dashboard views are implemented; live integrations are in progress.
+**An enterprise solution-architecture platform: marketing site, client portal, and team dashboard**
 
-## Overview
+[![Vite](https://img.shields.io/badge/Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev)
+[![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black)](https://react.dev)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
+[![Tailwind](https://img.shields.io/badge/Tailwind_CSS-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
+[![Status](https://img.shields.io/badge/status-MVP-orange)]()
 
-SolutionCraft models the full journey of a solution-architecture firm: a prospect lands on the public site, captures free competitive insights, books a paid consultation, and then tracks the resulting engagement - while the team runs sales, projects, and collaboration from an internal area.
+*A public-facing site, an authenticated client portal, and an internal team dashboard - in one platform.*
 
-It is built as a typed Vite + React single-page application with a shared design system, smooth motion, and a Supabase backend.
+</div>
 
-## Core Features
+---
 
-- **Public site** - homepage, services, about, contact, and legal pages built to establish trust without fabricated metrics.
-- **Lead intelligence** - free competitive-insights capture that doubles as a lead funnel.
-- **Consultation booking** - the primary conversion flow: landing to booking to engagement.
-- **Client view** - post-engagement project tracking.
-- **Team area** - internal sales pipeline, project management, and collaboration.
+## What Is This?
 
-## Architecture
+SolutionCraft is an enterprise solution-architecture platform that combines three surfaces: a public marketing site, an authenticated client portal, and an internal team dashboard for managing projects and architecture deliverables.
+
+> **Market it. Onboard clients. Run delivery.**
+
+---
+
+## Features
+
+| Feature | Description | Status |
+|---|---|:---:|
+| Marketing site | Public product and marketing pages | ✅ |
+| Client portal | Authenticated client area | ✅ |
+| Team dashboard | Internal projects and architecture | ✅ |
+| Auth + data | Supabase-backed accounts and content | 🚧 |
+| Solution builder | Structured architecture deliverables | 🚧 |
+
+---
+
+## How It Works
+
+```
+Public marketing site
+        │
+        ▼
+Client portal ◀──▶ Supabase (auth · data)
+        │
+        ▼
+Team dashboard (projects · solution architecture)
+```
+
+---
+
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
-| Frontend | Vite, React 18, TypeScript |
+| Frontend | Vite, React, TypeScript |
 | Styling | Tailwind CSS, Framer Motion |
-| Icons | lucide-react |
-| Backend | Supabase (Postgres, Auth) |
+| Auth / Data | Supabase |
+
+---
+
+## Project Structure
+
+```
+solutioncraft/
+.bolt/
+   config.json
+   prompt
+src/
+   components/
+   data/
+   types/
+   App.tsx
+   index.css
+   main.tsx
+.gitignore
+eslint.config.js
+index.html
+package.json
+package-lock.json
+postcss.config.js
+README.md
+tailwind.config.js
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
+vite.config.ts
+vite.config.ts.timestamp-1759136805209-4972218b75d5d8.mjs
+```
+
+---
 
 ## Screenshots
 
 <p align="center">
-  <img src="screenshots/01.png" width="800" /><br/><br/>
-  <img src="screenshots/02.png" width="800" /><br/><br/>
-  <img src="screenshots/03.png" width="800" /><br/><br/>
-  <img src="screenshots/04.png" width="800" /><br/><br/>
+  <img src="screenshots/01.png" width="800" />
+  <img src="screenshots/02.png" width="800" />
+  <img src="screenshots/03.png" width="800" />
+  <img src="screenshots/04.png" width="800" />
 </p>
+
+---
 
 ## Getting Started
 
 ```bash
 npm install
-npm run dev
+npm run dev -- --port 5180
 ```
+
+Environment variables (names only - never commit real values):
+
+```
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+```
+
+---
 
 ## Roadmap
 
-- CRM / booking integrations
-- Partner-network coordination tooling
-- Client billing and reporting
+- Full client onboarding flow
+- Solution-architecture builder
+- Role-based dashboard permissions
+
+---
 
 ## Notes
 
-Shared as a portfolio artifact demonstrating product and system design. Pre-launch prototype.
+Shared as a portfolio artifact demonstrating product and system design. Early prototype, not a finished product.
 
+<div align="center">
+
+MIT
+
+</div>
